@@ -1,15 +1,22 @@
+package lock;
 import java.util.Scanner;
+
 
 public class Main {
 
     public static void main(String[] args) {
-        FaceIDUnclock un = new FaceIDUnclock("ggr");
+        FaceIDUnclock un = new FaceIDUnclock("1");
+        
         Scanner sc = new Scanner(System.in);
         while (true) {
-            un.unlock(sc.nextLine());
-            
+            un.unlockFaceID(sc.next());
+            sc.close();
         }
+        // sc.close();
         
+     
     }
+
+    }
+
     
-}

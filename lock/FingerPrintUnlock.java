@@ -1,3 +1,4 @@
+package lock;
 public class FingerPrintUnlock extends Unlock {
     private String fingerPrint;
 
@@ -6,8 +7,8 @@ public class FingerPrintUnlock extends Unlock {
     }
 
     public void unlock(String otherFingerPrint) {
-        if(lockUnlock()){
-            System.out.println("Телефон заблокирован");
+        if(mode == 1){
+            System.out.println("Телефон разблокирован");
         }
         else{
             if (otherFingerPrint==fingerPrint && mode ==0) {
